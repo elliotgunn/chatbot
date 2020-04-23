@@ -20,7 +20,7 @@
   }
 
   h3 {
-      font-family: monospace;
+      font-family: 'IBM Plex Sans', sans-serif;
       color: black;
       font-size: 20px;
       margin-top: 3px;
@@ -44,7 +44,7 @@
   #textInput {
       width: 87%;
       border: none;
-      border-bottom: 3px solid #00b8b8;
+      border-bottom: 3px solid #e1e0dd;
       font-family: monospace;
       font-size: 17px;
   }
@@ -56,7 +56,7 @@
   }
 
   .userText {
-      color: white;
+      color: black;
       font-family: monospace;
       font-size: 17px;
       text-align: right;
@@ -64,13 +64,13 @@
   }
 
   .userText span {
-      background-color: #00b8b8;
+      background-color: #e1e0dd;
       padding: 10px;
-      border-radius: 2px;
+      border-radius: 4px;
   }
 
   .botText {
-      color: black;
+      color: white;
       font-family: monospace;
       font-size: 17px;
       text-align: left;
@@ -78,8 +78,8 @@
   }
 
   .botText span {
-      background-color: #e1e0dd;
-      padding: 100px;
+      background-color: #bfbabe;
+      padding: 10px;
       border-radius: 4px;
   }
 
@@ -95,11 +95,20 @@
 
 
   <body>
-    <h1>Flask Chatterbot Example</h1>
-    <h3>A web implementation of <a href="https://github.com/gunthercox/ChatterBot">ChatterBot</a> using Flask.</h3>
+    <h1>
+      <img
+        src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/237/man-facepalming_1f926-200d-2642-fe0f.png"
+        alt="elliot-bot"
+        style="width:40px;height:40px;"
+      /> Elliot the Bot
+    </h1>
+    <h3>
+      Elliot is a <a href="https://github.com/gunthercox/ChatterBot">ChatterBot</a>
+      who will <i>not</i> be helping you today.
+    </h3>
     <div>
       <div id="chatbox">
-        <p class="botText"><span>Hi! I'm Chatterbot.</span></p>
+        <p class="botText"><span>Hi! I'm Elliot.</span></p>
       </div>
       <div id="userInput">
         <input id="textInput" type="text" name="msg" placeholder="Message">

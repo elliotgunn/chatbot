@@ -5,7 +5,11 @@ from chatterbot.trainers import ChatterBotCorpusTrainer
 # instantiate app
 app = Flask(__name__)
 
-elliot_bot = ChatBot("ElliotBot", storage_adapter="chatterbot.storage.SQLStorageAdapter")
+elliot_bot = ChatBot("ElliotBot",
+                     storage_adapter = "chatterbot.storage.MongoDatabaseAdapter",
+                     database = mongodb_name,
+                     database_uri = mongodb_uri)
+
 trainer = ChatterBotCorpusTrainer(elliot_bot)
 trainer.train("chatterbot.corpus.english")
 
