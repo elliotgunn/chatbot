@@ -8,6 +8,7 @@ verify_ssl = true
 [packages]
 chatterbot = "==1.0.2"
 chatterbot-corpus = "*"
+flask = "*"
 
 [requires]
 python_version = "3.7"
