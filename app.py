@@ -25,4 +25,4 @@ def get_response():
     return str(elliot_bot.get_response(input))
 
 if __name__ == "__main__":
-    app.run()
+    app.run_server(debug=True)
