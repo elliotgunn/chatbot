@@ -7,8 +7,8 @@ app = Flask(__name__)
 
 elliot_bot = ChatBot("ElliotBot",
                      storage_adapter = "chatterbot.storage.MongoDatabaseAdapter",
-                     database = mongodb_name,
-                     database_uri = mongodb_uri)
+                     # database = mongodb_name,
+                     database_uri = mongodb://heroku_12345678:random_password@ds029017.mLab.com:29017/heroku_12345678)
 
 trainer = ChatterBotCorpusTrainer(elliot_bot)
 trainer.train("chatterbot.corpus.english")
